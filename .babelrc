@@ -1,0 +1,12 @@
+{
+	"presets": [
+		[
+			"env",
+			{
+				"modules": "commonjs",
+				"useBuiltIns": "usage"
+			}
+		]
+	],
+	"plugins": ["transform-object-rest-spread"]
+}
