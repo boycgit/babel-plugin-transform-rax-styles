@@ -1,6 +1,6 @@
 {
 	"name": "babel-plugin-transform-rax-styles",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "",
 	"main": "lib/index.js",
 	"engines": {
@@ -40,6 +40,6 @@
 	"dependencies": {
 		"babel-types": "^6.26.0",
 		"debug": "^3.1.0",
-		"rax-stylesheet-util": "^0.0.2"
+		"rax-stylesheet-util": "x.x.x"
 	}
 }
