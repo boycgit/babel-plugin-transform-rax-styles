@@ -1,0 +1,12 @@
+.container{
+  width:750px;
+  background-color: #eee;
+};
+.header{
+  font-size: 40px;
+  color: white;
+  background-color: #f44336;
+};
+.body{
+  font-size: 20px;
+}
