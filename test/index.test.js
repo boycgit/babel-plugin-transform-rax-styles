@@ -99,11 +99,11 @@ describe('transforms StyleSheet', () => {
 
 	// 不支持非赋值的方式引入样式
 	test('throws error when import/require statements are empty', () => {
-		expect(() => transform('fixtures/empty-require.js')).to.throw(
+		expect(() => transform('fixtures/empty-require.js')).toThrow(
 			/^.+: Found empty import from .+\.$/
 		);
 
-		expect(() => transform('fixtures/empty-import.js')).to.throw(
+		expect(() => transform('fixtures/empty-import.js')).toThrow(
 			/^.+: Found empty import from .+\.$/
 		);
 	});

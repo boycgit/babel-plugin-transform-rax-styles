@@ -19,12 +19,9 @@ var debugMini = debugBase('mini', '普通'); // 普通的日志
 var debugError = debugBase('error', '错误'); // 错误日志
 
 // The logger should only be disabled if we’re not in production.
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV === 'production') {
 	// Enable the logger.
-	Debug.enable('*');
-	debugMini('Logging is enabled!');
-} else {
 	Debug.disable();
-}
+}	
 
 export { debug, debugBase, debugMini, debugError };
