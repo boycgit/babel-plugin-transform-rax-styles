@@ -1,6 +1,6 @@
 {
 	"name": "babel-plugin-transform-rax-styles",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "",
 	"main": "lib/index.js",
 	"engines": {
@@ -14,17 +14,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url":
-			"git+https://github.com/boycgit/babel-plugin-transform-rax-styles.git"
+		"url": "git+https://github.com/boycgit/babel-plugin-transform-rax-styles.git"
 	},
-	"keywords": ["babel", "rax"],
+	"keywords": [
+		"babel",
+		"rax"
+	],
 	"author": "boycgit",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/boycgit/babel-plugin-transform-rax-styles/issues"
 	},
-	"homepage":
-		"https://github.com/boycgit/babel-plugin-transform-rax-styles#readme",
+	"homepage": "https://github.com/boycgit/babel-plugin-transform-rax-styles#readme",
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
 		"babel-core": "^6.26.0",
