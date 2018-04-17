@@ -1,0 +1,11 @@
+.container{
+  padding: 48 0 12 24;
+  background-color: white;
+}
+
+.content1Col{
+  color:#888888;
+  font-size: 26;
+  width: 578;
+  margin-top: -5;
+}

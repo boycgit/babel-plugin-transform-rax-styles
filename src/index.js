@@ -1,7 +1,7 @@
 import { dirname, isAbsolute, resolve } from 'path';
 import { readFileSync } from 'fs';
 import { toStyleSheet } from 'rax-stylesheet-util';
-import { debugMini } from './debug';
+import { debugMini, debugError } from './debug';
 
 function resolveModulePath(filename) {
 	const dir = dirname(filename);
@@ -26,7 +26,14 @@ export default function({ types: t }) {
 
 				const { callee: { name: calleeName }, arguments: args } = path.node;
 
-				debugMini(`[start]calleeName: ${calleeName}, args: ${JSON.stringify(args)}`);
+				try {
+					debugMini(
+						`[start]calleeName: ${calleeName}, args: ${JSON.stringify(args)}`
+					);
+				} catch (error) {
+					debugError(`[visitor] ${error}`);
+				}
+
 				// 检验条件，需要 `require('xxxx.css') 或者 import 'xxxx.css'` 这样的调用形式
 				if (
 					calleeName !== 'require' ||
